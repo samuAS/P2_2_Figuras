@@ -43,6 +43,14 @@ public class P2_2_Figuras
       Console.WriteLine(figura);
     }
 
+     double sumaAreas = 0;
+            foreach (Figura figura in lista_figuras)
+            {
+                sumaAreas += figura.GetAre();
+            }
+
+            Console.WriteLine($"Suma de áreas de todas las figuras: {sumaAreas}");
+
   }
 
 
