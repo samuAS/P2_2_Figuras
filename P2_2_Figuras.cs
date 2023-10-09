@@ -27,6 +27,19 @@ public class P2_2_Figuras
                 new Rectangulo(Color.FromArgb(255, 100, 50, 20), 5, 6),
                 new TrianguloEquilatero(Color.FromArgb(255, 0, 255, 0), 4)
             };
+
+    // Cambiar el color de todas las figuras en la lista
+    Color nuevoColor = Color.FromArgb(200, 245, 40, 145);
+    foreach (Figura figura in lista_figuras)
+    {
+      figura.Color = nuevoColor;
+    }
+    // Mostrar las figuras con el nuevo color
+    foreach (Figura figura in lista_figuras)
+    {
+      Console.WriteLine(figura);
+    }
+
   }
 
 
