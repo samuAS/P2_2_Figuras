@@ -12,8 +12,8 @@ public class P2_2_Figuras
   static void Main(string[] args)
   {
     Rectangulo rectangulo = new Rectangulo(Color.FromArgb(255, 50, 20, 34), 3, 3.9);
-    Circulo circulo1 = new Circulo(Color.FromArgb(255, 0, 20, 35), 4);
-    Circulo circulo2 = new Circulo(Color.FromArgb(255, 230, 20, 30), 2);
+    Circulo c1 = new Circulo(Color.FromArgb(255, 0, 20, 35), 4);
+    Circulo c2 = new Circulo(Color.FromArgb(255, 230, 20, 30), 2);
     TrianguloEquilatero triangulo = new TrianguloEquilatero(Color.FromArgb(255, 0, 20, 40), 3);
 
     Console.WriteLine(rectangulo);
@@ -23,18 +23,21 @@ public class P2_2_Figuras
 
     List<Figura> lista_figuras = new List<Figura>
             {
-                rectangulo,circulo1,circulo2,triangulo,
+                rectangulo,
+                c1,
+                c2,
+                triangulo,
                 new Rectangulo(Color.FromArgb(255, 100, 50, 20), 5, 6),
                 new TrianguloEquilatero(Color.FromArgb(255, 0, 255, 0), 4)
             };
 
-    // Cambiar el color de todas las figuras en la lista
+    
     Color nuevoColor = Color.FromArgb(200, 245, 40, 145);
     foreach (Figura figura in lista_figuras)
     {
       figura.Color = nuevoColor;
     }
-    // Mostrar las figuras con el nuevo color
+   
     foreach (Figura figura in lista_figuras)
     {
       Console.WriteLine(figura);
