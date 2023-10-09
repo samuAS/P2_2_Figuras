@@ -20,6 +20,13 @@ public class P2_2_Figuras
     Console.WriteLine(circulo1);
     Console.WriteLine(circulo2);
     Console.WriteLine(triangulo);
+
+    List<Figura> lista_figuras = new List<Figura>
+            {
+                rectangulo,circulo1,circulo2,triangulo,
+                new Rectangulo(Color.FromArgb(255, 100, 50, 20), 5, 6),
+                new TrianguloEquilatero(Color.FromArgb(255, 0, 255, 0), 4)
+            };
   }
 
 
